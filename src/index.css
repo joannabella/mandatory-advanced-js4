@@ -6,9 +6,160 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: no-repeat center center fixed;
+  background-image: url(https://img.freepik.com/free-vector/abstract-colorful-watercolor-splashing-background_38575-82.jpg?size=626&ext=jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.nav-header {
+  font-family: 'Dancing Script', cursive;
+  height: 90px;
+  box-shadow: 0px -7px 35px 0px #00000063;
+  line-height: 93px;
+  text-align: right;
+  color: #2a5e6f;
+}
+
+.app-title {
+  display: inline-block;
+  position: absolute;
+  left: 25px;
+  line-height: 82px;
+  font-size: 37px;
+}
+
+.circle-container {
+  display: flex;
+}
+
+.circle-logo, .title-circle1, .title-circle2, .title-circle3 {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 30px;
+  background-color: #e8cce3;
+  position: relative;
+  left: 150px;
+  top: 36px;
+}
+
+.title-circle1 {
+  background-color: #fff9af;
+  width: 17px;
+  height: 17px;
+  left: 150px;
+  top: 38px;
+}
+
+.title-circle2 {
+  background-color: #e8cce3;
+  width: 14px;
+  height: 14px;
+  left: 150px;
+  top: 40px;
+}
+
+.title-circle3 {
+  background-color: #fff9af;
+  width: 11px;
+  height: 11px;
+  left: 150px;
+  top: 42px;
+}
+
+.container {
+  background-color: #4a92a966;
+  margin: 0 auto;
+  margin-top: 70px;
+  display: flex;
+  max-width: 434px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 60px 0px #00000021;
+}
+
+.row {
+  padding: 0px;
+  flex-grow: 1;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  list-style-type: none;
+  margin: 5px;
+}
+
+.clearButton, .newGameButton {
+  position: relative;
+  top: 33px;
+  width: 200px;
+  height: 37px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4a92a980;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  text-transform: uppercase;
+  margin: 0 auto;
+  box-shadow: 1px 5px 45px #00000040;
+}
+
+.clearButton:hover, .newGameButton:hover {
+  transform: translateY(-10%);
+}
+
+.winnerMessage {
+  position: absolute;
+  top: 115px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #2a5e6f;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-shadow: 1px 1px 20px white;
+}
+
+.winnerColor {
+  text-shadow: 1px 1px 1px solid black;
+}
+
+.winnerMessage {
+  animation: fade 0.3s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .cell {
+    margin: 5px auto;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+
